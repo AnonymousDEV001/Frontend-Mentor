@@ -32,8 +32,8 @@
           <img src="./images/bg-card-back.png" alt="card back" />
         </div>
       </div>
-      <div class="rightContainer">
-        <form action="#">
+      <div id="rightContainer" class="rightContainer">
+        <form id="form" action="#">
           <label for="cardHolder">Cardholder Name</label>
           <input
             id="cardHolder"
@@ -59,9 +59,17 @@
               <input type="text" class="inputs" placeholder="eg. 123" />
             </div>
           </div>
-          <input class="confirm" type="text" value="Confirm">
+          <input id="submit" class="confirm" type="submit" value="Confirm">
         </form>
+        <div id="appreciate" class="appreciate">
+          <img src="./images/icon-complete.svg" alt="">
+          <p class="my-1">THANK YOU!</p>
+          <P class="m-1 grey">We've added your card details</P>
+          <button class="confirm continue m-1">Continue</button>
+        </div>
       </div>
+      
     </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

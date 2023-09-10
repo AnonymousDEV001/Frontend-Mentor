@@ -21,10 +21,13 @@
         <div class="cardFront">
           <div class="cardDetails">
             <img src="./images/card-logo.svg" alt="card logo" />
-            <p class="cardNumber">0000 0000 0000 0000</p>
+            <p id="cardNo" class="cardNumber">0000 0000 0000 0000</p>
             <div class="cardName">
-              <p>JANE APPLESEED</p>
-              <p>00/00</p>
+              <p id="cardName">JANE APPLESEED</p>
+              <div class="date">
+                <p id="vcard-mm" class="mm">00</p><p>/</p><p 
+                id="vcard-yy" class="yy">00</p>
+              </div>
             </div>
           </div>
         </div>
@@ -42,16 +45,18 @@
           />
           <label for="cardNumber">Card Number</label>
           <input
+          class="inputs"
+          maxlength="16"
             id="cardNumber"
-            type="text"
+            type="number"
             placeholder="e.g. 1234 5678 9123 0000"
           />
           <div class="cardDate-cvc">
             <div class="cardDate">
               <label for="mm">EXP. DATE (MM/YY)</label>
               <div class="dateInner">
-                <input class="inputs" id="mm" type="text" placeholder="MM" />
-                <input id="yy" class="inputs" type="text" placeholder="YY" />
+                <input class="inputs" id="mm" type="number" placeholder="MM" />
+                <input id="yy" class="inputs" type="number" placeholder="YY" />
               </div>
             </div>
             <div class="cvc">

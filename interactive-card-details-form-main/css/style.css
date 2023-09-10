@@ -89,6 +89,16 @@ form input:focus{
 }
 .inputs{
     padding: 0;
+    border-radius: 0.5rem;
+    border: 1px solid lightgrey;
+    padding: 0.6rem;
+
+    margin: 0.3rem 0;  
+}
+.date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cardDate-cvc{
     display: flex;
@@ -128,6 +138,7 @@ form input:focus{
     flex-direction: column;
     opacity: 0;
     position: absolute;
+    z-index: -1;
     transition: opacity 0.2s ease-in;
 }
 .continue{

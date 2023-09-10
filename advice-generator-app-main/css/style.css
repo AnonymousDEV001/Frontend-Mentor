@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgb(32, 38, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.card {
+  min-height: 20rem;
+  max-width: 35rem;
+  background-color: rgb(49, 58, 73);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 2.2rem;
+  text-align: center;
+  box-shadow: 10px 20px 90px hsl(0, 0%, 8.2%);
+  position: relative;
+}
+.advice-id {
+  color: hsl(150, 100%, 66%);
+  font-size: 1rem;
+}
+.advice {
+  color: hsl(193, 38%, 86%);
+}
+.line {
+  max-width: 28rem;
+  width: 92%;
+}
+.line img {
+  width: 100%;
+}
+.logo {
+  padding: 1rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  bottom: -1.5rem;
+}
+.logo:hover {
+  background-color: hsl(150, 100%, 57%);
+  box-shadow: 1px 1px 60px hsl(150, 100%, 55%);
+}
+.loading {
+  display: none;
+}

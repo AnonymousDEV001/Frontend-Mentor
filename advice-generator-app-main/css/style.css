@@ -20,7 +20,7 @@ body {
   font-size: 28px;
 }
 .card {
-  min-height: 20rem;
+  height: 20rem;
   max-width: 35rem;
   background-color: rgb(49, 58, 73);
   border-radius: 1rem;
@@ -63,4 +63,28 @@ body {
 }
 .loading {
   display: none;
+}
+.loading img {
+  width: 8rem;
+}
+
+@media screen and (max-width: 680px) {
+  .loading img {
+    width: 5.5rem;
+  }
+  .logo img {
+    width: 1.4rem;
+  }
+  .logo {
+    padding: 0.8rem;
+  }
+  .advice-id {
+    font-size: 0.7rem;
+  }
+  .card {
+    height: 13rem;
+    padding: 1rem;
+    width: 90%;
+    font-size: 1rem;
+  }
 }

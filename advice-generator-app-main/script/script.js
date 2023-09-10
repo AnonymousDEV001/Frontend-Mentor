@@ -5,10 +5,12 @@ let loading = document.getElementById("loading");
 let url = "https://api.adviceslip.com/advice";
 
 let fetchingAdvice = async () => {
-  adviceId.innerHTML = ``;
-  advice.innerHTML = ``;
+  advice.style.display = "none";
+  adviceId.style.display = "none";
   loading.style.display = "block";
   let response = await fetch(url);
+  advice.style.display = "block";
+  adviceId.style.display = "block";
   loading.style.display = "none";
   let data = await response.json();
   adviceId.innerHTML = `ADVICE #${data.slip.id}`;
